@@ -214,8 +214,8 @@ describe('Leave - Assign Leave', function () {
         cy.getOXDInput('To Date').isInvalid('Required');
         cy.getOXDInput('Comments')
           .type(this.strings.chars400.text)
-          // .isInvalid('Should be less than 250 characters');
-          .isInvalid('Should not exceed 250 characters');
+          .isInvalid('Should be less than 250 characters');
+        //.isInvalid('Should not exceed 250 characters');
       });
     });
     it('Assign leave-Date field validations', function () {
